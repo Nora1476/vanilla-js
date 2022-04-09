@@ -4,7 +4,12 @@ const toDoList = document.getElementById("todo-list");
 
 
 function paintTodo(newTodo) {
-   const li = document.createElement("li"); 
+   const li = document.createElement("li");
+   const span = document.createElement("span");
+   li.appendChild(span);
+   span.innerText = newTodo;
+   toDoList.appendChild(li);
+
 }
 
 
