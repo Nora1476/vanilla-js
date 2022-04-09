@@ -27,9 +27,8 @@ function paintGreeting () {
 
 function onLoginSubmit(event) {
   event.preventDefault();
-  
   localStorage.setItem(KEY_NAME, loginInput.value);
-  loginForm.classList.add(HIDDEN_CLASSNAME)
+  loginForm.classList.add(HIDDEN_CLASSNAME);
   paintGreeting();
 }
 
