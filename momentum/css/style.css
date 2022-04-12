@@ -30,7 +30,7 @@ img {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%);
+  transform: translate(-65%);
 }
 
 #login-form input:first-child {
@@ -41,7 +41,7 @@ img {
 #login-form input:last-child {
   height: 35px;
   width: 100px;
-  transform: translate(160%);
+  transform: translate(110%);
   
 }
 
@@ -70,7 +70,7 @@ img {
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  top: 85%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%);
 
@@ -82,3 +82,33 @@ img {
 }
 
 
+
+#screen_control {
+  position: fixed;
+  z-index: 99;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+#screen_control span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+@media (min-height: 350px)  {
+  #screen_control {
+    display: none;
+}
+  
